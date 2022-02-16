@@ -14,7 +14,7 @@ const EmptyScreen = () => {
 const HomeRoutes = () => {
 
 	return (
-        <Tab.Navigator barStyle={{ backgroundColor: 'black'}} initialRouteName='Genre'>
+        <Tab.Navigator barStyle={{ backgroundColor: 'black'}} initialRouteName='MyFav'>
             <Tab.Screen
                 name="Genre"
                 component={GenreScreen}

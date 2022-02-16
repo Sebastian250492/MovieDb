@@ -15,11 +15,6 @@ const MainRoute = () => {
 	const currentUserObj = useSelector((state) => state.auth);
 	const { loaded, currentUser } = currentUserObj;
 
-	console.log(
-		"🚀 ~ file: MainRoute.js ~ line 15 ~ MainRoute ~ currentUser",
-		currentUser
-	);
-
 	const dispatch = useDispatch();
 
 	useEffect(() => {
