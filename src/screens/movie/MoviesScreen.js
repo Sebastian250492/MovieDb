@@ -60,7 +60,10 @@ const MoviesScreen = ({ route }) => {
 	const renderItem = ({ item }) => {
 		const backgroundColor = "lightgray";
 		const color = "black";
-		const inFav = Object.keys(favMovies).find((mov) => mov == item.id);
+		let inFav = null
+		if (favMovies){
+			inFav = Object.keys(favMovies).find((mov) => mov == item.id);
+		}
 
 		return (
 			<Item

@@ -26,9 +26,11 @@ const FavMoviesScreen = () => {
 
 	let movieList = [];
 
-	Object.keys(movies).map((oneKey, i) => {
-		movieList.push(movies[oneKey].movie);
-	});
+	if (movies){
+		Object.keys(movies).map((oneKey, i) => {
+			movieList.push(movies[oneKey].movie);
+		});
+	}
 
 	useEffect(() => {
 		retrieveData();
